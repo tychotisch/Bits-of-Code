@@ -1,0 +1,8 @@
+func fire_rate():
+	var shoot_cooldown := 250
+	var last_shot = 0
+	var time = Time.get_ticks_msec()
+
+	if time - last_shot > shoot_cooldown:
+		last_shot = time
+		#do something
