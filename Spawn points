@@ -1,0 +1,7 @@
+var spawn_points := []
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	for i in get_children():
+		if i is Marker2D:
+			spawn_points.append(i)
