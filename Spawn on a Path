@@ -1,0 +1,6 @@
+func spawn_bubble() -> void:
+	var bubble_to_spawn := preload("res://Enemies/Bubble.tscn")
+	var bubble = bubble_to_spawn.instantiate()
+	%PathFollow2D.progress_ratio = randf()
+	bubble.global_position = %PathFollow2D.global_position
+	add_child(bubble)
