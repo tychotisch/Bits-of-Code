@@ -1,0 +1,4 @@
+func rotate_to_target() -> void:
+	var target_angle
+	target_angle = target.global_position.angle_to_point(global_position)
+	rotation = lerp_angle(rotation, target_angle, rotation_factor)
