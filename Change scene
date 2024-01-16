@@ -1,0 +1,14 @@
+#make sure player, level etc is part of your scene
+# make a main menu or something your main scene
+
+# in main menu scene:
+
+func on_button_level_1():
+  get_tree().change_scene_to_file("res...tscn")
+
+#on item to go to next level or on finish of level:
+
+@export var target_level : Packedscene
+
+func set_next_level():
+  get_tree().change_scene_to_packed(target_level)
